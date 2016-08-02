@@ -1,0 +1,142 @@
+body {
+    background-color: #ebfffa;
+
+}
+
+#top, #end {
+    color: #00211F;
+    text-align: center;
+}
+
+#controls-backing {
+    margin: auto;
+    margin-top: 10px;
+    padding: 10px;
+    position: relative;
+    background-color: #00211F;
+    color: #ebfffa;
+    box-shadow: 0 0 5px #000000, 0 5px 5px -3px #000000;
+    width: 700px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+#banner {
+    text-align: center;
+}
+
+#search-bar {
+    padding: 5px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+#search-input {
+    display: block;
+    margin: 0 auto;
+    height: auto;
+    background-color: #ebfffa;
+    color: #00211F;
+    width: 100%;
+}
+
+#search-submit {
+    background-color: inherit;
+    margin-left: 0px;
+}
+
+.inner-addon {
+    position: relative;
+}
+
+.inner-addon .glyphicon {
+    position: absolute;
+    padding: 10px;
+    pointer-events: none;
+}
+
+.left-addon .glyphicon  { left:  0px;}
+.right-addon .glyphicon { right: 0px;}
+
+.left-addon input  { padding-left:  30px; }
+.right-addon input { padding-right: 30px; }
+
+.glyphicon-search {
+    color: #00211F;
+}
+
+#viewer-backing {
+    margin: auto;
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #72c3ba;
+    box-shadow: 0 0 5px #000000;
+    width: 700px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: #00211F;
+}
+
+.streamer-info {
+    background-color: #ebfffa;
+    color: #00211F;
+    margin: 10px;
+    box-shadow: 0 0 10px #000000;
+    border-radius: 5px;
+}
+
+.streamer-photo-container {
+    margin-right: 5px;
+    width: 75px;
+}
+
+.streamer-photo {
+    height: 50px;
+    width: auto;
+    border-radius: 50%;
+    margin: 5px;
+}
+
+.streamer-name a {
+    color: #00211F;
+}
+
+.streamer-name {
+    margin-top: 15px;
+}
+
+.streamer-status, .streamer-game, .glyphicon-remove{
+    float: right;
+    font-size: 18px;
+}
+.streamer-status, .streamer-game{
+    margin-top: 15px;
+}
+
+.glyphicon-remove{
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 750px){
+    #controls-backing {
+        width: 350px;
+    }
+
+    #search-submit {
+        width: 100%;
+    }
+
+    #viewer-backing {
+        width: 350px;
+    }
+
+    .streamer-status, .streamer-game, .glyphicon-remove{
+        float: bottom;
+        width: 50%;
+    }
+
+    .streamer-status {
+        text-align: center;
+    }
+
+}

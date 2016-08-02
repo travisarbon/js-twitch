@@ -1,0 +1,44 @@
+<html lang="en">
+<head>
+    <title>Twitch Viewer</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script type =  "text/javascript" src = "script.js"></script>
+</head>
+<body>
+<div class = "container-fluid">
+    <div id = "top">
+        <h1>Who's Streaming?</h1>
+    </div>
+    <div id = "application">
+        <div id = "controls-backing">
+            <div id = "controls-row" class = "row">
+                <div id = "banner" class = "col-xs-9"><h2>Everyone</h2></div>
+                <div id = "buttons" class = "col-xs-3">
+                    <input id = "everyone-button" type="radio" name="piece" value="easy" checked="checked"> All <br>
+                    <input id = "online-button" type="radio" name="piece" value="strict"> Online <br>
+                    <input id = "offline-button" type="radio" name="piece" value="strict"> Offline
+                </div>
+            </div>
+            <div id = "search-row" class = "row">
+                <div id = "search-bar" class = "col-md-8 inner-addon left-addon">
+                    <i class="glyphicon glyphicon-search"></i>
+                    <input id = "search-input" type = "text" placeholder = "Add a streamer here...">
+                </div>
+                <div id = "search-submit" class = "col-md-3 btn">Add Streamer</div>
+            </div>
+        </div>
+        <div id = "viewer-backing">
+        </div>
+    </div>
+    <div id = "end">
+        <p>Coded by Travis Arbon</p>
+    </div>
+</div>
+</body>
+</html>
